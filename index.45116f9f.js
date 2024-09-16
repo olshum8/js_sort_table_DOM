@@ -1,0 +1,2 @@
+document.querySelectorAll("th").forEach(function(e,t){e.addEventListener("click",function(){var e,r,n,l;n=!isNaN((r=Array.from((e=document.querySelector("table")).rows).slice(1))[0].cells[t].textContent),l=3===t,r.sort(function(e,r){var o=e.cells[t].textContent,c=r.cells[t].textContent;return(l&&(o=parseFloat(o.replace(/[$,]/g,"")),c=parseFloat(c.replace(/[$,]/g,"")),n=!0),n)?o-c:o.localeCompare(c)}),r.forEach(function(t){return e.appendChild(t)})})});
+//# sourceMappingURL=index.45116f9f.js.map
